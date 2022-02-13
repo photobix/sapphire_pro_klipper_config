@@ -1,0 +1,305 @@
+/*
+This is a theme for Mainsail.
+It is inspired by the OnlyFans color-scheme and exclusivly available for Mainsail patreons.
+
+* created by: steadyjaw
+
+ONLYFANS COLOR PALETTE
+    Blue:         Hex: #00AFF0
+                  RGB: (0 175 240)
+                  HSL: (196 100% 47%)
+    White:        Hex: #FFFFFF
+                  RGB: (255 255 255)
+                  HSL: (0 0% 100%)
+    Black:        Hex: #27272B
+                  RGB: (39 39 43)
+                  HSL: (240 5% 16%)
+    Grey:         Hex: #8A96A3
+                  RGB: (138 150 163)
+                  HSL: (211 12% 59%)
+    Blue light:   HEX: #1EB8F1
+                  RGB: (30 184 241)
+                  HSL: (196 88 %53%)
+    Color scheme source: https://www.onlinepalette.com/onlyfans/
+
+*/
+
+:root {
+    --Primary:        #00AFF0;
+    --color-primary:  #00AFF0 !important;
+    --Secondary:      #1EB8F1;
+    --Green:          #8ec300;
+    --Red:            #f10114;
+    --Warnings:       #f16601;
+    --Text:           #f8f8f2;
+    --DarkerText:     #f5f5f2;    
+    --Background:     #2e2e31;
+    --DarkBackground: #27272B;
+    --Toolbars:       #27272B;
+    --Sheets:         #27272B;
+}
+/* Overwrite Primary color */
+.v-application--wrap {   
+    --color-primary:   #00AFF0 !important;
+}
+
+/**/
+/* Change Color of text */
+/**/
+.v-btn__content .v-toolbar__title {
+    color: var(--Text) !important;
+}
+.text--darken-2 {
+    color: var(--Text) !important;
+}
+.subheading {
+    color: var(--Text) !important;
+}
+.v-btn:not(.error--text) .theme--dark.v-icon, .v-btn:not(.error--text) .v-btn__content, .v-text-field__suffix {
+    color: var(--Text) !important;
+}
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
+    color: var(--Text) !important;
+}
+/**/
+
+/**/
+/* Change Primary color */
+/**/
+.v-application .primary {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
+}
+.v-application .primary--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .blue--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .info {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo .v-input__control input {
+    caret-color: var(--Primary);
+}
+.theme--dark.v-color-picker .v-color-picker__input input {
+    border: thin solid var(--Primary);
+    color: var(--Text);
+}
+.command.text--blue{
+    color: var(--Primary);
+}
+/**/
+
+/**/
+/* Change Secondary color */
+/**/
+.v-application .secondary {
+    background-color: var(--Secondary) !important;
+    border-color: var(--Secondary) !important;
+}
+.theme--dark.v-chip {
+    color: var(--Text) !important;
+    background-color: var(--Secondary) !important;
+}
+/**/
+
+/**/
+/* LEFT: Navigation and Logo */
+/**/
+#nav-header {
+    border: 0;
+    justify-content: left;
+    padding-left: 15px;
+}
+nav ul.navi .nav-link {
+    border-radius: .3em;
+}
+.theme--dark.v-navigation-drawer {
+    border-right: 3px solid var(--Primary)'22';
+    background-color: var(--DarkBackground);
+}
+nav .v-image__image--cover {
+    background-size: 50%;
+    background-position: 80% 85% !important;
+    opacity: .5;
+}
+.v-navigation-drawer--mini-variant .v-image__image--cover {
+    background-size: 85%;
+    background-position: center 90% !important;
+    opacity: .5;
+}
+/**/
+
+/**/
+/* Topbar */
+/**/
+.topbar .v-toolbar-content {
+    box-shadow: 0 -8px 10px 3px #1e1e1e;
+}
+/**/
+
+/**/
+/* Tmeperatures */
+/**/
+.echarts-tooltip {
+    background-color: var(--Sheets) !important;
+}
+.echarts-tooltip .col.py-1 {
+    border: 0px;
+    border-bottom: 1.5px solid var(--Primary) !important;
+}
+/**/
+
+/**/
+/* Background */
+/**/
+body {
+    background-color: var(--Background);
+}
+/**/
+
+/**/
+/* Toolbars */
+/**/
+.v-sheet {
+    border-color: var(--Background);
+}
+.theme--dark.v-application {
+    background: var(--Background);
+}
+#content {
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--Background);
+}
+.panel .v-toolbar__content {
+    border-bottom: 3px solid var(--Primary) !important;
+}
+header.va-app-bar {
+    border-bottom: 3px solid var(--Primary) !important;
+}
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+    background-color: var(--DarkBackground);
+}
+/**/
+ 
+/**/
+/* Darkest Color / Grey darkend */
+/**/
+.v-application .grey.darken-3 {
+    background-color: var(--DarkBackground) !important;
+    border-color: var(--DarkBackground) !important;
+}
+.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
+    background: var(--DarkBackground) !important;
+}
+.theme--dark.v-btn.v-btn--has-bg {
+    background-color: var(--DarkBackground);
+}
+/**/
+
+
+/**/
+/* Sheets - such as "Controls" or "Temperatures */
+/**/
+.v-application .panel {
+    background-color: var(--Sheets) !important;
+    border-color: var(--Sheets) !important;
+}
+.theme--dark.v-sheet {
+    background-color: var(--Sheets);
+}
+.theme--dark.v-toolbar.v-sheet {
+    background-color: var(--Sheets);
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+.v-data-table {
+    background-color: var(--Sheets) !important;
+}
+.v-tooltip__content {
+    background-color: var(--Sheets) !important;
+}
+/**/
+
+/**/
+/* vCard and subtitle Text Color */
+/**/
+.theme--dark.v-card .v-card__subtitle, .theme--dark.v-card>.v-card__text {
+    color: var(--DarkerText);
+}
+/**/
+
+/**/
+/* green elements */
+/**/
+.v-application .green--text {
+    color: var(--Green) !important;
+    caret-color: var(--Green) !important;
+}
+.v-application .green {
+    background-color: var(--Green) !important;
+    border-color: var(--Green) !important;
+}
+.v-application .green--text.text--darken-1 {
+    color: var(--Green) !important;
+    caret-color: var(--Green) !important;
+}
+.v-toast__item--success{
+    background-color: var(--Green) !important;
+    color: #000 !important;
+}
+/**/
+
+/**/
+/* warnings and orange elements */
+/**/
+.v-application button.warning {
+    background: var(--Warnings) !important;
+    background-color: var(--Warnings) !important;
+    border-color: var(--Warnings) !important;
+}
+.theme--dark.warning--text {
+    color: var(--Warnings) !important;
+}
+.v-toast__item--warning{
+    background-color: var(--Warnings) !important;
+}
+.v-application .orange .darken-2 {
+    background: var(--Warnings) !important;
+    background-color: var(--Warnings) !important;
+}
+header.orange .v-toolbar__content {
+    background-color: var(--Toolbars);
+    border-bottom-color: var(--Warnings) !important;
+    border-radius: 4px;
+}
+/**/
+
+/**/
+/* red elements */
+/**/
+.v-application .red {
+    background-color: var(--Red) !important;
+    border-color: var(--Red) !important;
+}
+.v-application .red--text.text--darken-1 {
+    color: var(--Red) !important;
+    caret-color: var(--Red) !important;
+}
+.v-application .red--text {
+    color: var(--Red) !important;
+    caret-color: var(--Red) !important;
+}
+.v-application .error {
+    background-color: var(--Red) !important;
+    border-color: var(--Red) !important;
+}
+.v-toast__item--error{
+    background-color: var(--Red) !important;
+}
+/**/
